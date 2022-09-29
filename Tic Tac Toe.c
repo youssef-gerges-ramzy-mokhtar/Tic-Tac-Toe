@@ -280,9 +280,8 @@ int* coordinates_input(int* currentPlayer) {
    char dummyText[250];
    int rowUpdate, colUpdate;
 
-   if (*currentPlayer == 1) printf("Player 1 - Place mark: ");
-   if (*currentPlayer == 2) printf("Player 2 - Place mark: ");
-
+   printf("Player %d - Place mark: ", *currentPlayer);
+   
    scanf_problems_absorber(dummyText, 250); // Running the scanf_problems_absorber to store any extra values from the previous scanf call
    int scanf_value = scanf("%d , %d", &rowUpdate, &colUpdate);
 
